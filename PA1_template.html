@@ -243,6 +243,8 @@ plot(as.numeric(levels(by_interval$interval)), by_interval$steps, type = &quot;l
 
 <p>The number of missing values is 2304</p>
 
+<p>Missing values will be replaced by the average number of steps for that interval.  The average values for each interval were computed above.</p>
+
 <pre><code class="r"># dataframe containing only missing values
 d_na &lt;- data[is.na(data$steps), ]
 # dataframe containing only non-missing values (complete cases)

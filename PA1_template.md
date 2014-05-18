@@ -74,6 +74,8 @@ The interval containing the maximum average number of steps is 835
 
 The number of missing values is 2304
 
+Missing values will be replaced by the average number of steps for that interval.  The average values for each interval were computed above.
+
 
 ```r
 # dataframe containing only missing values

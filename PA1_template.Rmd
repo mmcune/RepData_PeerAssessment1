@@ -39,6 +39,8 @@ The interval containing the maximum average number of steps is `r as.character(b
 
 The number of missing values is `r sum(is.na(data$steps))`
 
+Missing values will be replaced by the average number of steps for that interval.  The average values for each interval were computed above.
+
 ```{r replace_missing, echo = TRUE}
 # dataframe containing only missing values
 d_na <- data[is.na(data$steps),]
